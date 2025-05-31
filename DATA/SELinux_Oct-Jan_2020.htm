@@ -1,0 +1,1759 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="SELinux_Oct-Jan_2020_files/filelist.xml">
+<link rel=Edit-Time-Data href="SELinux_Oct-Jan_2020_files/editdata.mso">
+<link rel=OLE-Object-Data href="SELinux_Oct-Jan_2020_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Zafar</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Zafar Mohiuddin</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>16</o:TotalTime>
+  <o:LastPrinted>2021-02-06T22:22:00Z</o:LastPrinted>
+  <o:Created>2021-02-06T22:23:00Z</o:Created>
+  <o:LastSaved>2025-05-31T04:44:00Z</o:LastSaved>
+  <o:Pages>7</o:Pages>
+  <o:Words>901</o:Words>
+  <o:Characters>5140</o:Characters>
+  <o:Lines>42</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6029</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="SELinux_Oct-Jan_2020_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="SELinux_Oct-Jan_2020_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>140</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:DocumentVariables>
+   <w:__Grammarly_42____i>H4sIAAAAAAAEAKtWckksSQxILCpxzi/NK1GyMqwFAAEhoTITAAAA</w:__Grammarly_42____i>
+   <w:__Grammarly_42___1>H4sIAAAAAAAEAKtWcslP9kxRslIyNDYyMLUwsLQwMLewNLCwMDRV0lEKTi0uzszPAykwrAUASNQXQSwAAAA=</w:__Grammarly_42___1>
+  </w:DocumentVariables>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="0" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:105%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-bidi-font-family:"Times New Roman";}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("SELinux_Oct-Jan_2020_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("SELinux_Oct-Jan_2020_files/header.htm") fcs;
+	mso-endnote-separator:url("SELinux_Oct-Jan_2020_files/header.htm") es;
+	mso-endnote-continuation-separator:url("SELinux_Oct-Jan_2020_files/header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-even-header:url("SELinux_Oct-Jan_2020_files/header.htm") eh1;
+	mso-header:url("SELinux_Oct-Jan_2020_files/header.htm") h1;
+	mso-even-footer:url("SELinux_Oct-Jan_2020_files/header.htm") ef1;
+	mso-footer:url("SELinux_Oct-Jan_2020_files/header.htm") f1;
+	mso-first-header:url("SELinux_Oct-Jan_2020_files/header.htm") fh1;
+	mso-first-footer:url("SELinux_Oct-Jan_2020_files/header.htm") ff1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:2096586251;
+	mso-list-template-ids:1346138100;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Calibri;
+	mso-fareast-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	mso-bidi-font-family:Calibri;}
+@list l0:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="2"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='tab-interval:.5in;
+word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<div align=center>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#A8D08D;mso-background-themecolor:
+  accent6;mso-background-themetint:153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center'><span
+  style='color:black;mso-color-alt:windowtext'>SELinux</span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Directory:
+  /etc/sysconfig/selinux; </p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Config file:
+  vi /etc/sysconfig/selinux; </p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Port #: 22;
+  2222</p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Package:
+  policycoreutils-python;</p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Services:
+  sshd</p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Protocol: tcp</p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Command:
+  semanage, getenforce, setenforce, sestatus</p>
+  <p class=MsoNormal style='margin-bottom:0in'>URL:</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal align=center style='margin-bottom:0in;text-align:center'><!--[if gte vml 1]><v:shapetype
+   id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+   path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:504.75pt;
+   height:315pt' o:ole="">
+   <v:imagedata src="SELinux_Oct-Jan_2020_files/image002.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=673 height=420
+  src="SELinux_Oct-Jan_2020_files/image003.jpg" border=0 v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1026"
+    DrawAspect="Content" ObjectID="_1810153827">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'>Unusual activity is blocked by <b
+  style='mso-bidi-font-weight:normal'>SELinux</b></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'>What exactly <b
+  style='mso-bidi-font-weight:normal'>SELinux</b> does? – it protects the
+  system from <i style='mso-bidi-font-style:normal'>unusual activity</i>.</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>For example, SSH works on port
+  22, but is SSH tries to use any other port it will be blocked, even after
+  allowing through firewall.</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'>If a person has access to
+  building going through front door using the badge – this is normal activity
+  for this person.</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>If the same person tries enter
+  building from the side door using same badge, he will be denied access.</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'>Mandatory Access Control</p>
+  <p class=MsoListParagraph style='margin-bottom:0in;mso-add-space:auto;
+  text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>An additional security layer over
+  discretionary access control limiting who can do to what</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Discretionary access control</p>
+  <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Traditional </p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
+  mso-list:l0 level2 lfo2'><![if !supportLists]><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New"'><span style='mso-list:Ignore'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]>File
+  permissions </p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
+  mso-list:l0 level2 lfo2'><![if !supportLists]><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New"'><span style='mso-list:Ignore'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]>Access
+  control List</p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
+  mso-list:l0 level2 lfo2'><![if !supportLists]><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New"'><span style='mso-list:Ignore'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]>setuid</p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
+  mso-list:l0 level2 lfo2'><![if !supportLists]><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New"'><span style='mso-list:Ignore'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]>setguid</p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-top:0in;margin-right:0in;
+  margin-bottom:0in;margin-left:1.0in;mso-add-space:auto;text-indent:-.25in;
+  mso-list:l0 level2 lfo2'><![if !supportLists]><span style='font-family:"Courier New";
+  mso-fareast-font-family:"Courier New"'><span style='mso-list:Ignore'>o<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]>su/sudo
+  previlages</p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>if you own the file or folder – you get to
+  determine who get the access to it.</p>
+  <p class=MsoListParagraphCxSpLast style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>This is known a discretionary</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Subject </p>
+  <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>A user or process that accesses an object</p>
+  <p class=MsoListParagraphCxSpLast style='margin-bottom:0in;mso-add-space:
+  auto'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Object </p>
+  <p class=MsoListParagraph style='margin-bottom:0in;mso-add-space:auto;
+  text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>A resource such as a file, directory, device,
+  ports etc.,</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Access</p>
+  <p class=MsoListParagraph style='margin-bottom:0in;mso-add-space:auto;
+  text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>An action performed by a subject on an object,
+  example read write or create</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Security policy</p>
+  <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>System-wide policy of rules defining which
+  subject can access which object</p>
+  <p class=MsoListParagraphCxSpLast style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Two policies in Enterprise Linux – Targeted
+  and Strict – targeted is default</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Security context</p>
+  <p class=MsoListParagraph style='margin-bottom:0in;mso-add-space:auto;
+  text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Tag used by SELinux to store security
+  attributes of subject and objects</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>SELinux modes</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Enforcing mode</p>
+  <p class=MsoListParagraphCxSpFirst style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Security policy is enforced</p>
+  <p class=MsoListParagraphCxSpLast style='margin-bottom:0in;mso-add-space:
+  auto;text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>That means SELinux security is active</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# getenforce</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Enforcing</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Permissive mode</p>
+  <p class=MsoListParagraph style='margin-bottom:0in;mso-add-space:auto;
+  text-indent:-.25in;mso-list:l0 level1 lfo2'><![if !supportLists]><span
+  style='mso-bidi-font-family:Calibri'><span style='mso-list:Ignore'>-<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Security policy is observed and warning will
+  be displayed, but policy is not enforced</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# setenforce 0</p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# getenforce</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Permissive</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>If the system reboots the
+  enforcing will turn on </p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# sestatus</p>
+  <p class=MsoNormal style='margin-bottom:0in'>SELinux status:<span
+  style='mso-spacerun:yes'>                 </span>enabled</p>
+  <p class=MsoNormal style='margin-bottom:0in'>SELinuxfs mount:<span
+  style='mso-spacerun:yes'>                </span>/sys/fs/selinux</p>
+  <p class=MsoNormal style='margin-bottom:0in'>SELinux root directory:<span
+  style='mso-spacerun:yes'>         </span>/etc/selinux</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Loaded policy name:<span
+  style='mso-spacerun:yes'>             </span>targeted</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='background:yellow;
+  mso-highlight:yellow'>Current mode:<span
+  style='mso-spacerun:yes'>                   </span>permissive</span></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Mode from config file:<span
+  style='mso-spacerun:yes'>          </span>enforcing</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Policy MLS status:<span
+  style='mso-spacerun:yes'>              </span>enabled</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Policy deny_unknown status:<span
+  style='mso-spacerun:yes'>     </span>allowed</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Max kernel policy version:<span
+  style='mso-spacerun:yes'>      </span>31</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 sysconfig]# init 6</p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 sysconfig]# vi
+  selinux</p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 sysconfig]#
+  getenforce</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Permissive</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Disable SELinux</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span lang=ES style='mso-ansi-language:
+  ES'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span lang=ES style='mso-ansi-language:
+  ES'>[root@zmpt01 ~]# vi /etc/sysconfig/selinux<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span lang=ES style='mso-ansi-language:
+  ES'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span lang=ES style='mso-ansi-language:
+  ES'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0in'># This file controls the state
+  of SELinux on the system.</p>
+  <p class=MsoNormal style='margin-bottom:0in'># SELINUX= can take one of these
+  three values:</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#<span
+  style='mso-spacerun:yes'>     </span>enforcing - SELinux security policy is
+  enforced.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#<span
+  style='mso-spacerun:yes'>     </span>permissive - SELinux prints warnings
+  instead of enforcing.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#<span
+  style='mso-spacerun:yes'>     </span>disabled - No SELinux policy is loaded.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#SELINUX=enforcing</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='background:yellow;
+  mso-highlight:yellow'>SELINUX=disabled</span></p>
+  <p class=MsoNormal style='margin-bottom:0in'># SELINUXTYPE= can take one of
+  three values:</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#<span
+  style='mso-spacerun:yes'>     </span>targeted - Targeted processes are
+  protected,</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#<span
+  style='mso-spacerun:yes'>     </span>minimum - Modification of targeted
+  policy. Only selected processes are protected.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>#<span
+  style='mso-spacerun:yes'>     </span>mls - Multi Level Security protection.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>SELINUXTYPE=targeted</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# init 6</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# getenforce</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Disabled</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><i style='mso-bidi-font-style:
+  normal'>Note: Never set SELinux disabled<o:p></o:p></i></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Lest change the SSH Port to use port number 2222</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Note: number of ports in OS –
+  2^16 = 2x2x…16 = 65,536</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Ports are nothing but door of
+  the operating system</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Normal SSH port – 22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Change SSH port – 2222</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Install semanage package</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# yum install
+  policycoreutils-python</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Grep for port 22</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# semanage port
+  -l | grep 22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh_port_t<span
+  style='mso-spacerun:yes'>                     </span>tcp<span
+  style='mso-spacerun:yes'>      </span>22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Check the status of port 22</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# grep SSH
+  /etc/services</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh<span
+  style='mso-spacerun:yes'>             </span>22/tcp<span
+  style='mso-spacerun:yes'>                          </span># The Secure Shell
+  (SSH) Protocol</p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh<span
+  style='mso-spacerun:yes'>             </span>22/udp<span
+  style='mso-spacerun:yes'>                          </span># The Secure Shell
+  (SSH) Protocol</p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh<span
+  style='mso-spacerun:yes'>             </span>22/sctp<span
+  style='mso-spacerun:yes'>                 </span># SSH</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Change the port 2222</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# vi
+  /etc/ssh/sshd_config</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='background:yellow;
+  mso-highlight:yellow'>Port=2222</span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# firewall-cmd
+  --permanent --zone=public --add-port=2222/tcp</p>
+  <p class=MsoNormal style='margin-bottom:0in'>success</p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# firewall-cmd
+  --reload</p>
+  <p class=MsoNormal style='margin-bottom:0in'>success</p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# firewall-cmd
+  --list-port</p>
+  <p class=MsoNormal style='margin-bottom:0in'>2222/tcp</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# systemctl
+  restart sshd</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Job for sshd.service failed
+  because the control process exited with error code. See &quot;systemctl
+  status sshd.service&quot; and &quot;<span style='background:yellow;
+  mso-highlight:yellow'>journalctl -xe</span>&quot; for details.</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><!--[if gte vml 1]><v:shape
+   id="_x0000_i1027" type="#_x0000_t75" style='width:334.5pt;height:306.75pt'
+   o:ole="">
+   <v:imagedata src="SELinux_Oct-Jan_2020_files/image004.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=446 height=409
+  src="SELinux_Oct-Jan_2020_files/image004.png" border=0 v:shapes="_x0000_i1027"><![endif]><!--[if gte mso 9]><xml>
+   <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1027"
+    DrawAspect="Content" ObjectID="_1810153828">
+   </o:OLEObject>
+  </xml><![endif]--></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Connection is still denied, even
+  though the port 2222 is open through firewall</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Also regular port 22 will not
+  work either after we perform semanage update through SELinux</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Now allow through the SELinux</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# semanage port
+  -l | grep -i 22</p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh_port_t<span
+  style='mso-spacerun:yes'>                     </span>tcp<span
+  style='mso-spacerun:yes'>      </span>22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# semanage port
+  -a -t ssh_port_t -p tcp 2222<span style='mso-spacerun:yes'>         
+  </span>#&lt; --- adding port 2222 to SELinux</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh_port_t<span
+  style='mso-spacerun:yes'>                     </span>tcp<span
+  style='mso-spacerun:yes'>      </span><span style='background:yellow;
+  mso-highlight:yellow'>2222</span>, 22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_31" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:336pt;
+   height:131.25pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="SELinux_Oct-Jan_2020_files/image005.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=448 height=175
+  src="SELinux_Oct-Jan_2020_files/image005.png" v:shapes="Picture_x0020_31"><![endif]></span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+   id="Picture_x0020_38" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:467.25pt;
+   height:93.75pt;visibility:visible;mso-wrap-style:square'>
+   <v:imagedata src="SELinux_Oct-Jan_2020_files/image006.png" o:title=""/>
+  </v:shape><![endif]--><![if !vml]><img width=623 height=125
+  src="SELinux_Oct-Jan_2020_files/image007.jpg" v:shapes="Picture_x0020_38"><![endif]></span></p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Login successful</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Note: port 22 is disabled, only
+  port 2222 will work</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>To make port 22 work again, add
+  to /etc/ssh/sshd_config </p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>port=2222</p>
+  <p class=MsoNormal style='margin-bottom:0in'>port=22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  background:#A8D08D;mso-background-themecolor:accent6;mso-background-themetint:
+  153;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><span style='color:black;
+  mso-color-alt:windowtext'>Set it back to original setting</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# semanage port
+  -d -t ssh_port_t -p tcp 2222</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Port 2222 is removed</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:32'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# semanage port
+  -l | grep 22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>ssh_port_t<span
+  style='mso-spacerun:yes'>                     </span>tcp<span
+  style='mso-spacerun:yes'>      </span>22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:33'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# vi
+  /etc/ssh/sshd_config</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>#Port 22</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:34'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# systemctl
+  restart sshd</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>No errors</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:35;mso-yfti-lastrow:yes'>
+  <td width=623 valign=top style='width:467.5pt;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>[root@zmpt01 ~]# systemctl
+  status sshd</p>
+  <p class=MsoNormal style='margin-bottom:0in'>&#9679; sshd.service - OpenSSH
+  server daemon</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'>   </span>Loaded: loaded
+  (/usr/lib/systemd/system/sshd.service; enabled; vendor preset: enabled)</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'>   </span>Active: active (running) since Sat
+  2021-02-06 15:26:01 EST; 36s ago</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'>     </span>Docs: man:sshd(8)</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'>           </span>man:sshd_config(5)</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'> </span>Main PID: 2152 (sshd)</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'>   </span>CGroup: /system.slice/sshd.service</p>
+  <p class=MsoNormal style='margin-bottom:0in'><span
+  style='mso-spacerun:yes'>           </span>&#9492;&#9472;2152 /usr/sbin/sshd
+  -D</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  <p class=MsoNormal style='margin-bottom:0in'>Feb 06 15:26:01
+  zmpt01.prod.zmprotech.com systemd[1]: Stopped OpenSSH server daemon.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Feb 06 15:26:01
+  zmpt01.prod.zmprotech.com systemd[1]: Starting OpenSSH server daemon...</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Feb 06 15:26:01
+  zmpt01.prod.zmprotech.com sshd[2152]: Server listening on 0.0.0.0 port <span
+  style='background:yellow;mso-highlight:yellow'>22</span>.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Feb 06 15:26:01
+  zmpt01.prod.zmprotech.com sshd[2152]: Server listening on :: port <span
+  style='background:yellow;mso-highlight:yellow'>22</span>.</p>
+  <p class=MsoNormal style='margin-bottom:0in'>Feb 06 15:26:01
+  zmpt01.prod.zmprotech.com systemd[1]: Started OpenSSH server daemon.</p>
+  <p class=MsoNormal style='margin-bottom:0in'><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
