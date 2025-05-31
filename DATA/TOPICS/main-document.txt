@@ -46,40 +46,8 @@ touch
 - 
 
 
-ls -a
-
-- ls with switch -a
-- this means the output will display ALL files
-- including hidden files
-- 
-- hidden files start with . period
-
-
-[zafar1@linux ~]$ ls -a
-.   .bash_history  .bash_profile  .config    file1     .ssh
-..  .bash_logout   .bashrc        .esd_auth  .mozilla  .viminfo
-ls -al
-- This is combination of two switches
-- -l long list
-- -a all files or hidden files
-
-
-
-
-[zafar1@linux ~]$ ls -al
-total 44
-drwx------.  5 zafar1 zafar1  172 Nov 23 09:58 .
-drwxr-xr-x. 80 root   root   4096 Nov 23 09:27 ..
--rw-------.  1 zafar1 zafar1 9514 Aug 31 12:02 .bash_history
--rw-r--r--.  1 zafar1 zafar1   18 Oct  1  2021 .bash_logout
--rw-r--r--.  1 zafar1 zafar1  141 Oct  1  2021 .bash_profile
--rw-r--r--.  1 zafar1 zafar1  376 Oct  1  2021 .bashrc
-drwx------.  4 zafar1 zafar1   33 Nov 29  2022 .config
--rw-------.  1 zafar1 zafar1   16 Nov 22  2022 .esd_auth
--rw-rw-r--.  1 zafar1 zafar1    0 Nov 23 09:58 file1
-drwxr-xr-x.  4 zafar1 zafar1   39 Feb 28  2021 .mozilla
-drwx------.  2 zafar1 zafar1   80 Dec  7  2022 .ssh
--rw-------.  1 zafar1 zafar1 9018 Dec  1  2022 .viminfo
+
+
 History   
 
 - Displays the history of commands for that user logged in
